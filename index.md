@@ -1,4 +1,4 @@
-## Welcome to vela 网站,哈哈哈哈哈
+## Welcome to vela 网站
 
 Welcome to vela 网站,哈哈哈哈哈
 You can use the [editor on GitHub](https://github.com/SunLala/myH5/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
