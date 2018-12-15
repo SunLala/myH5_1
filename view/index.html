@@ -2,20 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> 我的网站啊啊啊啊啊你好吗</title>
+    <title> 我的网站啊啊啊啊啊</title>
     <style type="text/css">
-        body{
-            background-image: url("../images/1.jpg");
-            background-size: 100%;
+        body,html,page{
             height:100%;
+            width:100%;
+            margin: 0;
         }
-        html{
-            height:100%
+        page{
+            font-size: 200px;
+            position: absolute;
+            padding-top: 0;
+            padding-left: 0;
+        }
+        #spring{
+            background-color: pink;
+            animation: spring 10s infinite;
+        }
+        #summer{
+            background-color: crimson;
+            animation: summer 10s infinite;
+        }
+        #autumn{
+            background-color: gray;
+            animation: autumn 10s infinite;
+        }
+        #winter{
+            background-color: white;
+            animation: winter 10s infinite;
+        }
+        @keyframes spring {
+            0%{opacity: 0}
+            20%{opacity: 100}
+            40%{opacity: 0}
+            60%{opacity: 0}
+            80%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes summer {
+            0%{opacity: 0}
+            20%{opacity: 0}
+            40%{opacity: 100}
+            60%{opacity: 0}
+            80%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes autumn {
+            0%{opacity: 0}
+            20%{opacity: 0}
+            40%{opacity: 0}
+            60%{opacity: 100}
+            80%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes winter {
+            0%{opacity: 0}
+            20%{opacity: 0}
+            40%{opacity: 0}
+            60%{opacity: 0}
+            80%{opacity: 100}
+            100%{opacity: 0}
         }
     </style>
 </head>
 <body>
     <!--<img src="../images/1.jpg"/>-->
-    <p>这是我第一次用webstorm工具写html文件，感觉很好呀!</p>
+    <!--<p>这是我第一次用webstorm工具写html文件，感觉很好呀!</p>-->
+    <page id="spring">春</page>
+    <page id="summer">夏</page>
+    <page id="autumn">秋</page>
+    <page id="winter">冬</page>
 </body>
 </html>

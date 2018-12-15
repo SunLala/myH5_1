@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- 通过指定html命名空间的名字来定义自定义标签；
+     默认的一些标签p div等都在html默认的命名空间下。
+-->
+<!-- 第一步：自定义的标签可以放在自定义的命名空间下，可通过xmlns:命名空间名 来指定 -->
+<html xmlns:mine>
+
+<head>
+    <meta charset="UTF-8">
+    <title>自定义标签</title>
+    <style>
+        /* 第三步： 自定义标签在设置样式的时候使用 " 命名空间名\:标签名  "    */
+        mine\:tag {
+            font-size: .36rem;
+            font-weight: bold;
+            color: red;
+        }
+
+        p {
+            font-size: 25px;
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+<p>this is normal text</p>
+<!-- 第二步： 自定义标签需要带命名空间名 " 命名空间名:标签名 " -->
+<mine:tag>this is custom text</mine:tag>
+</body>
+</html>
